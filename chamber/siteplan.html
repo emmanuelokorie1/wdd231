@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagos Chamber of Commerce - Site Plan</title>
+  <meta name="description" content="Site plan document for the Lagos Chamber of Commerce project including audience, personas, SEO plan, design brief, and wireframes.">
+  <meta name="author" content="Emmanuel Okorie">
+  <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <script src="../scripts/date.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="brand">
+        <img src="../images/logo.svg" alt="Lagos Chamber Logo" width="44" height="44">
+        <span>Lagos Chamber of Commerce</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Course Home</a></li>
+          <li><a href="index.html">Chamber Home</a></li>
+          <li><a href="siteplan.html" class="active">Site Plan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Chamber of Commerce Project Site Plan</h1>
+
+    <section class="intro-section" style="margin-bottom: 2rem;">
+      <h2>1. Site Name</h2>
+      <p><strong>Lagos Chamber of Commerce</strong></p>
+      <p><em>Domain Concept:</em> lagoschamber.org</p>
+    </section>
+
+    <section class="intro-section" style="margin-bottom: 2rem;">
+      <h2>2. Site Purpose</h2>
+      <p>
+        The Lagos Chamber of Commerce website will serve as a digital resource hub and networking gateway for local businesses, entrepreneurs, and community leaders in the vibrant Lagos metropolitan area. The platform facilitates business directory searches, promotes local economic development, coordinates community events, and fosters partnerships between burgeoning local enterprises and established corporations.
+      </p>
+    </section>
+
+    <section class="intro-section" style="margin-bottom: 2rem;">
+      <h2>3. Target Market & User Personas</h2>
+      <p><strong>Target Market:</strong> Small to medium business owners, startup founders, corporate executives, and local residents in Lagos and surrounding regional economic corridors.</p>
+      <br>
+      <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div style="background:#f8fafc; padding:1rem; border-radius:6px; border:1px solid #e2e8f0;">
+          <h3>Maria - Small Business Owner</h3>
+          <p>32-year-old boutique owner looking to gain visibility, network with other suppliers, and access chamber marketing opportunities to scale her retail presence.</p>
+        </div>
+        <div style="background:#f8fafc; padding:1rem; border-radius:6px; border:1px solid #e2e8f0;">
+          <h3>Diego - Corporate Director</h3>
+          <p>45-year-old logistics director seeking strategic community partnerships, corporate sponsorship packages, and high-impact regional economic forums.</p>
+        </div>
+        <div style="background:#f8fafc; padding:1rem; border-radius:6px; border:1px solid #e2e8f0;">
+          <h3>Amina - New Resident & Professional</h3>
+          <p>28-year-old tech professional recently relocated to Lagos, searching for vetted local service providers, co-working networks, and chamber-hosted civic events.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-section" style="margin-bottom: 2rem;">
+      <h2>4. Scenarios & User Stories</h2>
+      <ul style="padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+        <li>A local artisan searches the business directory by category to identify potential wholesale partners and verify contact info.</li>
+        <li>An expanding technology startup explores membership tiers (Non-profit, Silver, Gold) and submits an online application form with company details.</li>
+        <li>A visitor accesses the Discover page to review weather forecasts, demographic statistics, locale history, and upcoming networking breakfasts.</li>
+      </ul>
+    </section>
+
+    <section class="intro-section" style="margin-bottom: 2rem;">
+      <h2>5. SEO Strategy</h2>
+      <ul style="padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+        <li>Target local business search queries: "Lagos Chamber of Commerce", "Lagos business directory", "join chamber Lagos".</li>
+        <li>Implement descriptive meta titles and meta descriptions between 50-160 characters on every page.</li>
+        <li>Utilize Open Graph tags and schema.org Organization structured data.</li>
+        <li>Ensure responsive mobile speed and optimal Core Web Vitals performance.</li>
+      </ul>
+    </section>
+
+    <section class="intro-section" style="margin-bottom: 2rem;">
+      <h2>6. Design Brief</h2>
+      <ul style="padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+        <li><strong>Primary Color:</strong> <code>#0f2a4a</code> (Deep Navy)</li>
+        <li><strong>Secondary/Accent Color:</strong> <code>#0284c7</code> (Sky Blue) &amp; <code>#16a34a</code> (Emerald Green)</li>
+        <li><strong>Background Color:</strong> <code>#f8fafc</code> (Light Slate) &amp; <code>#ffffff</code> (Pure White)</li>
+        <li><strong>Text Color:</strong> <code>#1e293b</code> (Dark Slate)</li>
+        <li><strong>Font Family:</strong> <code>'Montserrat', system-ui, sans-serif</code></li>
+      </ul>
+    </section>
+
+    <section class="intro-section">
+      <h2>7. Site Map & Page Architecture</h2>
+      <p>The website is organized into four core pages:</p>
+      <ul style="padding-left: 1.5rem; margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+        <li><strong>Home:</strong> Community highlights, weather forecast, call to action, and business spotlight cards.</li>
+        <li><strong>Discover:</strong> Regional history, demographics, area gallery/montage, and local events.</li>
+        <li><strong>Directory:</strong> Interactive business directory supporting Grid view and List view toggles.</li>
+        <li><strong>Join:</strong> Membership tiers (Non-profit, Silver, Gold), benefits comparison, and application form.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> &bull; Lagos Chamber of Commerce Site Plan &bull; Emmanuel Okorie</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

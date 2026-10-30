@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 - Web Frontend Development I - Emmanuel Okorie</title>
+  <meta name="description" content="WDD 231 Web Frontend Development course home page for Emmanuel Okorie featuring certificate course list, credits, and project portal.">
+  <meta name="author" content="Emmanuel Okorie">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="brand">
+        <img src="images/logo.svg" alt="Site Logo" width="44" height="44">
+        <span>Emmanuel Okorie</span>
+      </div>
+      <button id="menu-button" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="chamber/index.html">Chamber Project</a></li>
+          <li><a href="final/index.html">Final Project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <div class="content-grid">
+      <section class="card about-me">
+        <h2>About Me</h2>
+        <div class="card-body">
+          <p>
+            Hello! My name is Emmanuel Okorie. I am an enthusiastic software developer pursuing a degree in Software Development through BYU-Pathway Worldwide and BYU-Idaho. I specialize in building responsive, performant, and user-friendly web interfaces using modern standards.
+          </p>
+          <p>
+            I enjoy transforming creative designs into interactive web applications that solve real-world problems. When I am not writing code, I enjoy exploring modern frontend technologies, reading tech articles, and collaborating on open-source projects.
+          </p>
+        </div>
+      </section>
+
+      <section class="card student-photo">
+        <h2>Student Photo</h2>
+        <div class="card-body">
+          <img src="images/profile.webp" alt="Emmanuel Okorie" width="500" height="500" loading="lazy">
+        </div>
+      </section>
+
+      <section class="card courses-card">
+        <h2>Web Certificate Courses</h2>
+        <div class="card-body">
+          <div class="filter-controls">
+            <button type="button" class="filter-btn active" data-filter="all">All</button>
+            <button type="button" class="filter-btn" data-filter="cse">CSE</button>
+            <button type="button" class="filter-btn" data-filter="wdd">WDD</button>
+          </div>
+          <div id="course-cards" class="course-grid"></div>
+          <p id="credit-total" class="credit-total"></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="social-links">
+        <a href="https://github.com/emmanuelokorie1" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <img src="images/icon-github.svg" alt="GitHub icon" width="24" height="24">
+        </a>
+        <a href="https://www.linkedin.com/in/emmanuel-okorie" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <img src="images/icon-linkedin.svg" alt="LinkedIn icon" width="24" height="24">
+        </a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X Profile">
+          <img src="images/icon-x.svg" alt="X icon" width="24" height="24">
+        </a>
+      </div>
+      <p>&copy; <span id="currentyear"></span> &bull; Emmanuel Okorie &bull; Nigeria</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
