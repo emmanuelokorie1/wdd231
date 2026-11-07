@@ -8,3 +8,4 @@ const lastModifiedParagraph = document.querySelector('#lastModified');
 if (lastModifiedParagraph) {
   lastModifiedParagraph.textContent = `Last Modification: ${document.lastModified}`;
 }
+

@@ -85,3 +85,4 @@ if (gridBtn && listBtn && directoryContainer) {
 
 // Initial fetch call
 getMembers();
+
