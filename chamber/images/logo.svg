@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Lagos Chamber of Commerce Logo">
+  <defs>
+    <linearGradient id="chamber-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0f2a4a"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="88" height="88" rx="18" fill="url(#chamber-gold)"/>
+  <!-- Classic pillars and pediment representing Commerce & Enterprise -->
+  <polygon points="50,18 20,32 80,32" fill="#ffffff"/>
+  <rect x="24" y="32" width="52" height="4" fill="#38bdf8"/>
+  <rect x="28" y="38" width="6" height="34" rx="2" fill="#ffffff"/>
+  <rect x="42" y="38" width="6" height="34" rx="2" fill="#ffffff"/>
+  <rect x="52" y="38" width="6" height="34" rx="2" fill="#ffffff"/>
+  <rect x="66" y="38" width="6" height="34" rx="2" fill="#ffffff"/>
+  <rect x="20" y="74" width="60" height="6" rx="2" fill="#38bdf8"/>
+</svg>

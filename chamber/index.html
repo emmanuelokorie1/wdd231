@@ -6,25 +6,35 @@
   <title>Lagos Chamber of Commerce - Hub for Community & Business</title>
   <meta name="description" content="Lagos Chamber of Commerce supports local economic growth, networking opportunities, and business directory services for local entrepreneurs.">
   <meta name="author" content="Emmanuel Okorie">
-  <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/chamber.css">
-  <script src="../scripts/date.js" defer></script>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
 </head>
 <body>
   <header>
     <div class="header-container">
-      <div class="brand">
-        <img src="../images/logo.svg" alt="Lagos Chamber Logo" width="44" height="44">
-        <span>Lagos Chamber of Commerce</span>
-      </div>
-      <nav>
+      <a href="index.html" class="brand" aria-label="Lagos Chamber of Commerce Home">
+        <img src="images/logo.svg" alt="Lagos Chamber of Commerce Logo" width="44" height="44">
+        <div class="brand-text">
+          <span class="brand-title">Lagos Chamber</span>
+          <span class="brand-subtitle">Commerce &bull; Community &bull; Growth</span>
+        </div>
+      </a>
+      <button id="menu-button" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      <nav id="nav-menu">
         <ul>
-          <li><a href="../index.html">Course Home</a></li>
-          <li><a href="index.html" class="active">Chamber Home</a></li>
-          <li><a href="siteplan.html">Site Plan</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
         </ul>
       </nav>
     </div>
@@ -38,15 +48,31 @@
         The Lagos Chamber of Commerce unites business leaders, entrepreneurs, and institutions to strengthen regional commerce and advocate for our community.
       </p>
       <div class="action-box">
-        <p>Review the comprehensive architectural site plan and design blueprints for this project:</p>
-        <a href="siteplan.html" class="btn-primary">View Chamber Site Plan &rarr;</a>
+        <p>Explore verified businesses in the Lagos metropolitan area:</p>
+        <a href="directory.html" class="btn-primary">Browse Business Directory &rarr;</a>
+        <a href="siteplan.html" class="btn-primary" style="margin-left: 0.5rem; background-color: #0f2a4a;">View Site Plan</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> &bull; Lagos Chamber of Commerce &bull; Emmanuel Okorie</p>
-    <p id="lastModified"></p>
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="footer-brand">
+          <img src="images/logo.svg" alt="Lagos Chamber of Commerce Emblem" width="36" height="36">
+          <p>Lagos Chamber of Commerce</p>
+        </div>
+        <p>100 Commercial Avenue, Victoria Island</p>
+        <p>Lagos, Nigeria</p>
+        <p>Email: <a href="mailto:info@lagoschamber.org">info@lagoschamber.org</a></p>
+        <p>Phone: <a href="tel:+23412345678">+234 1 234 5678</a></p>
+      </div>
+      <div class="footer-dev">
+        <p>&copy; <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+        <p>Emmanuel Okorie &bull; WDD 231</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

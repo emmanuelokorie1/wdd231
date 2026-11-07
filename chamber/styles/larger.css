@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Lagos Chamber of Commerce - Tablet & Desktop Styles (larger.css)
+   ========================================================================== */
+
+@media screen and (min-width: 640px) {
+  /* Grid Layout: 2 Columns on small tablets */
+  #directory-container.grid-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Header & Navigation */
+  .header-container {
+    padding: 1rem 1.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    width: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  nav li {
+    width: auto;
+  }
+
+  nav a {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  /* Main layout */
+  main {
+    padding: 2.5rem 1.5rem 3.5rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .page-description {
+    font-size: 1.05rem;
+  }
+
+  /* List View: Horizontal layout on tablets and desktop */
+  .list-view .card-content {
+    display: grid;
+    grid-template-columns: 1.8fr 1.3fr 1.8fr 1.2fr 1.1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .list-view .card-header {
+    margin-bottom: 0;
+  }
+
+  .list-view .member-name {
+    font-size: 1.05rem;
+  }
+
+  .list-view .membership-badge {
+    display: inline-block;
+  }
+
+  .list-view .member-category {
+    font-size: 0.88rem;
+  }
+
+  .list-view .member-address {
+    font-size: 0.88rem;
+  }
+
+  .list-view .member-phone {
+    font-size: 0.88rem;
+  }
+
+  .list-view .member-website {
+    margin-top: 0;
+    text-align: right;
+  }
+
+  /* Footer Layout */
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .footer-dev {
+    border-top: none;
+    padding-top: 0;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Grid Layout: 3 Columns on desktop */
+  #directory-container.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}

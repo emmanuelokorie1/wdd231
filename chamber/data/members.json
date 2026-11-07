@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Paystack Technologies",
+    "address": "126 Joel Ogunnaike St, Ikeja GRA, Lagos",
+    "phone": "+234 1 905 4000",
+    "website": "https://paystack.com",
+    "image": "paystack.webp",
+    "membership": 3,
+    "membershipLevel": "Gold",
+    "category": "Fintech & Payments",
+    "tagline": "Modern payment solutions for ambitious businesses."
+  },
+  {
+    "name": "Flutterwave Global",
+    "address": "8 Adeyemi Lawson St, Ikoyi, Lagos",
+    "phone": "+234 1 888 9595",
+    "website": "https://flutterwave.com",
+    "image": "flutterwave.webp",
+    "membership": 3,
+    "membershipLevel": "Gold",
+    "category": "Financial Services",
+    "tagline": "Endless payment possibilities across global economies."
+  },
+  {
+    "name": "Andela Nigeria",
+    "address": "235 Ikorodu Rd, Ilupeju, Lagos",
+    "phone": "+234 1 700 3200",
+    "website": "https://andela.com",
+    "image": "andela.webp",
+    "membership": 3,
+    "membershipLevel": "Gold",
+    "category": "Software Engineering",
+    "tagline": "Connecting world-class engineering teams."
+  },
+  {
+    "name": "Kuda Microfinance Bank",
+    "address": "151 Herbert Macaulay Way, Yaba, Lagos",
+    "phone": "+234 1 633 5832",
+    "website": "https://kuda.com",
+    "image": "kuda.webp",
+    "membership": 2,
+    "membershipLevel": "Silver",
+    "category": "Digital Banking",
+    "tagline": "The bank of the free for everyday personal and business banking."
+  },
+  {
+    "name": "Ingressive Capital",
+    "address": "10 Admiralty Way, Lekki Phase 1, Lagos",
+    "phone": "+234 1 450 7821",
+    "website": "https://ingressivecapital.com",
+    "image": "ingressive.webp",
+    "membership": 2,
+    "membershipLevel": "Silver",
+    "category": "Venture Capital",
+    "tagline": "Seed fund investing in tech-enabled African startups."
+  },
+  {
+    "name": "Eko Atlantic Development",
+    "address": "Marina Boulevard, Victoria Island, Lagos",
+    "phone": "+234 1 270 5600",
+    "website": "https://ekoatlantic.com",
+    "image": "ekoatlantic.webp",
+    "membership": 2,
+    "membershipLevel": "Silver",
+    "category": "Urban Development",
+    "tagline": "Building an environmentally sustainable financial hub."
+  },
+  {
+    "name": "Slot Systems Limited",
+    "address": "2B Medical Rd, Computer Village, Ikeja, Lagos",
+    "phone": "+234 1 493 2500",
+    "website": "https://slot.ng",
+    "image": "slot.webp",
+    "membership": 1,
+    "membershipLevel": "Member",
+    "category": "Consumer Electronics",
+    "tagline": "Retailer of premium mobile phones and electronic accessories."
+  },
+  {
+    "name": "Farmcrowdy Agritech",
+    "address": "42 Montgomery Rd, Yaba, Lagos",
+    "phone": "+234 1 822 1400",
+    "website": "https://farmcrowdy.com",
+    "image": "farmcrowdy.webp",
+    "membership": 1,
+    "membershipLevel": "Member",
+    "category": "Agri-Tech Solutions",
+    "tagline": "Empowering local agriculture with smart digital tools."
+  }
+]

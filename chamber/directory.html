@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagos Chamber of Commerce - Member Directory</title>
+  <meta name="description" content="Explore the Lagos Chamber of Commerce member directory to discover leading local businesses, technology partners, and community services in Lagos.">
+  <meta name="author" content="Emmanuel Okorie">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph Meta Tags for Facebook & Social Media -->
+  <meta property="og:title" content="Lagos Chamber of Commerce Business Directory">
+  <meta property="og:description" content="Discover reputable enterprises, tech innovators, and commerce partners across Lagos in our business directory.">
+  <meta property="og:image" content="https://emmanuelokorie1.github.io/wdd231/chamber/images/chamber-og.webp">
+  <meta property="og:url" content="https://emmanuelokorie1.github.io/wdd231/chamber/directory.html">
+
+  <!-- Google Fonts Preconnect and Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- External Deferred JavaScript -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="brand" aria-label="Lagos Chamber of Commerce Home">
+        <img src="images/logo.svg" alt="Lagos Chamber of Commerce Logo" width="44" height="44">
+        <div class="brand-text">
+          <span class="brand-title">Lagos Chamber</span>
+          <span class="brand-subtitle">Commerce &bull; Community &bull; Growth</span>
+        </div>
+      </a>
+      <button id="menu-button" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-intro">
+      <h1>Lagos Chamber of Commerce Directory</h1>
+      <p class="page-description">Connecting visionary entrepreneurs, established businesses, and regional leaders driving innovation and economic development across Lagos.</p>
+    </div>
+
+    <div class="view-controls">
+      <button id="grid-btn" class="active" type="button" aria-pressed="true" aria-label="Switch to grid view of member cards">
+        &#9638; Grid View
+      </button>
+      <button id="list-btn" type="button" aria-pressed="false" aria-label="Switch to list view of member records">
+        &#9776; List View
+      </button>
+    </div>
+
+    <section id="directory-container" class="grid-view" aria-label="Chamber of Commerce Members List">
+      <!-- Member cards generated dynamically by directory.js from data/members.json -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="footer-brand">
+          <img src="images/logo.svg" alt="Lagos Chamber of Commerce Emblem" width="36" height="36">
+          <p>Lagos Chamber of Commerce</p>
+        </div>
+        <p>100 Commercial Avenue, Victoria Island</p>
+        <p>Lagos, Nigeria</p>
+        <p>Email: <a href="mailto:info@lagoschamber.org">info@lagoschamber.org</a></p>
+        <p>Phone: <a href="tel:+23412345678">+234 1 234 5678</a></p>
+      </div>
+      <div class="footer-dev">
+        <p>&copy; <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+        <p>Emmanuel Okorie &bull; WDD 231</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
