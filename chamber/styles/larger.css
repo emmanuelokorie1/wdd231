@@ -53,6 +53,37 @@
     font-size: 1.05rem;
   }
 
+  /* Home Hero CTA overlay on larger screens */
+  .hero-cta {
+    bottom: 2rem;
+    left: 2rem;
+    right: auto;
+    max-width: 520px;
+    padding: 1.75rem 2rem;
+  }
+
+  .hero-cta h2 {
+    font-size: 1.55rem;
+  }
+
+  .hero-cta p {
+    font-size: 0.98rem;
+  }
+
+  /* Home Multi-column Grid (Events & Weather side-by-side) */
+  .home-columns {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 1.75rem;
+    align-items: start;
+  }
+
+  /* Spotlights 2 Columns on Tablet */
+  .spotlight-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
   /* List View: Horizontal layout on tablets and desktop */
   .list-view .card-content {
     display: grid;
@@ -112,8 +143,22 @@
     gap: 1.75rem;
   }
 
+  /* Spotlights: 3 Columns on desktop */
+  .spotlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+  }
+
+  .hero-cta {
+    max-width: 560px;
+    padding: 2rem;
+  }
+
+  .hero-cta h2 {
+    font-size: 1.75rem;
+  }
+
   h1 {
     font-size: 2.5rem;
   }
 }
-

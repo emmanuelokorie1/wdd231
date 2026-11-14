@@ -3,20 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lagos Chamber of Commerce - Hub for Community & Business</title>
-  <meta name="description" content="Lagos Chamber of Commerce supports local economic growth, networking opportunities, and business directory services for local entrepreneurs.">
+  <title>Lagos Chamber of Commerce - Hub for Business &amp; Community</title>
+  <meta name="description" content="Welcome to the Lagos Chamber of Commerce. Discover local business events, member spotlights, weather forecasts, and networking opportunities in Lagos.">
   <meta name="author" content="Emmanuel Okorie">
+
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" sizes="any">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph Meta Tags for Facebook & Social Media -->
+  <meta property="og:title" content="Lagos Chamber of Commerce - Home &amp; Community">
+  <meta property="og:description" content="Discover verified member spotlights, current economic events, local weather, and partnership opportunities across Lagos.">
+  <meta property="og:image" content="https://emmanuelokorie1.github.io/wdd231/chamber/images/chamber-og.webp">
+  <meta property="og:url" content="https://emmanuelokorie1.github.io/wdd231/chamber/index.html">
+
+  <!-- Google Fonts Preconnect and Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheets -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- External Deferred JavaScript -->
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
+  <script src="scripts/home.js" defer></script>
 </head>
 <body>
   <header>
@@ -41,16 +55,82 @@
   </header>
 
   <main>
-    <h1>Welcome to the Lagos Chamber of Commerce</h1>
-    <section class="intro-section">
-      <h2>Empowering Local Commerce & Innovation</h2>
-      <p>
-        The Lagos Chamber of Commerce unites business leaders, entrepreneurs, and institutions to strengthen regional commerce and advocate for our community.
-      </p>
-      <div class="action-box">
-        <p>Explore verified businesses in the Lagos metropolitan area:</p>
-        <a href="directory.html" class="btn-primary">Browse Business Directory &rarr;</a>
-        <a href="siteplan.html" class="btn-primary" style="margin-left: 0.5rem; background-color: #0f2a4a;">View Site Plan</a>
+    <h1 class="visually-hidden">Lagos Chamber of Commerce</h1>
+
+    <!-- Scalable Hero Banner with CTA Link positioned over image -->
+    <section class="hero-container" aria-label="Chamber Welcome and Call to Action">
+      <img src="images/hero-lagos.webp" alt="Lagos City Skyline and Lagoon Business Corridor" class="hero-img" width="1200" height="520">
+      <div class="hero-cta">
+        <h2>Building the Future of Lagos Commerce</h2>
+        <p>Join hundreds of visionary businesses, technology innovators, and community leaders driving prosperity across West Africa.</p>
+        <a href="join.html" class="btn-cta">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Content Columns: Events & Weather -->
+    <div class="home-columns">
+      <!-- Current Events Section -->
+      <section class="events-card" aria-labelledby="events-heading">
+        <h2 id="events-heading">Upcoming Chamber Events</h2>
+        <div class="events-list">
+          <article class="event-item">
+            <div class="event-badge">Nov 28</div>
+            <div class="event-details">
+              <h3>Annual Lagos Economic Forum 2026</h3>
+              <p class="event-meta">Eko Convention Centre &bull; 9:00 AM &ndash; 4:00 PM</p>
+              <p class="event-snippet">Explore regional cross-border commerce, infrastructure investments, and pan-African trade opportunities.</p>
+            </div>
+          </article>
+          <article class="event-item">
+            <div class="event-badge">Dec 05</div>
+            <div class="event-details">
+              <h3>Tech Founders &amp; Angel Mixer</h3>
+              <p class="event-meta">Victoria Island Co-Work Hub &bull; 5:30 PM &ndash; 8:00 PM</p>
+              <p class="event-snippet">Connect high-growth technology startups with angel networks, venture partners, and corporate sponsors.</p>
+            </div>
+          </article>
+          <article class="event-item">
+            <div class="event-badge">Dec 12</div>
+            <div class="event-details">
+              <h3>SME Export Readiness Masterclass</h3>
+              <p class="event-meta">Chamber Auditorium, Ikeja &bull; 10:00 AM &ndash; 2:00 PM</p>
+              <p class="event-snippet">Hands-on session on digital cross-border payments, packaging standards, and export logistics.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Weather Section using OpenWeatherMap API -->
+      <section class="weather-card" aria-labelledby="weather-heading">
+        <h2 id="weather-heading">Local Weather</h2>
+        <div class="weather-box">
+          <div class="current-weather">
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="Current weather condition" width="64" height="64">
+            <div class="weather-main-info">
+              <span id="current-temp" class="weather-temp">--&deg;C</span>
+              <p id="weather-desc" class="weather-desc">Loading weather...</p>
+            </div>
+          </div>
+          <div class="weather-extra">
+            <p><strong>Humidity:</strong> <span id="humidity">--%</span></p>
+            <p><strong>Location:</strong> Lagos, Nigeria</p>
+          </div>
+        </div>
+
+        <div class="forecast-section">
+          <h3>3-Day Forecast</h3>
+          <div id="forecast-container" class="forecast-grid">
+            <!-- Dynamically populated by home.js -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Member Spotlights Section (2-3 Gold or Silver Members randomly loaded) -->
+    <section class="spotlights-section" aria-labelledby="spotlight-heading">
+      <h2 id="spotlight-heading">Member Spotlights</h2>
+      <div id="spotlight-container" class="spotlight-grid">
+        <!-- Dynamically populated by home.js from data/members.json -->
       </div>
     </section>
   </main>
