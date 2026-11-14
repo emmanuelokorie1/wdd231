@@ -91,8 +91,8 @@ function displayForecast(data) {
     dayCard.classList.add('forecast-day');
     dayCard.innerHTML = `
       <span class="forecast-label">${dayLabel}</span>
-      <img src="https://openweathermap.org/img/wn/${iconCode}.png" alt="${desc}" width="40" height="40" loading="lazy">
-      <span class="forecast-temp"><strong>${temp}°C</strong></span>
+      <img src="https://openweathermap.org/img/wn/${iconCode}.png" alt="${desc}" width="44" height="44" loading="lazy">
+      <span class="forecast-temp">${temp}&deg;C</span>
       <span class="forecast-desc">${desc}</span>
     `;
     forecastContainer.appendChild(dayCard);
@@ -107,17 +107,17 @@ function displayFallbackWeather() {
     forecastContainer.innerHTML = `
       <div class="forecast-day">
         <span class="forecast-label">Tomorrow</span>
-        <span class="forecast-temp"><strong>32°C</strong></span>
+        <span class="forecast-temp">32&deg;C</span>
         <span class="forecast-desc">Clear Sky</span>
       </div>
       <div class="forecast-day">
         <span class="forecast-label">Day 2</span>
-        <span class="forecast-temp"><strong>30°C</strong></span>
+        <span class="forecast-temp">30&deg;C</span>
         <span class="forecast-desc">Scattered Clouds</span>
       </div>
       <div class="forecast-day">
         <span class="forecast-label">Day 3</span>
-        <span class="forecast-temp"><strong>29°C</strong></span>
+        <span class="forecast-temp">29&deg;C</span>
         <span class="forecast-desc">Light Rain</span>
       </div>
     `;
@@ -168,18 +168,29 @@ function displaySpotlights(members) {
 
     card.innerHTML = `
       <div class="spotlight-header">
-        <h3 class="spotlight-title">${member.name}</h3>
+        <div class="spotlight-title-group">
+          <h3 class="spotlight-title">${member.name}</h3>
+          <span class="spotlight-category">${member.category || 'Commerce'}</span>
+        </div>
         <span class="membership-badge ${levelBadgeClass}">${levelText}</span>
       </div>
       <div class="spotlight-image-wrap">
         <img src="images/${member.image}" alt="${member.name} logo" width="400" height="240" loading="lazy">
       </div>
       <div class="spotlight-body">
-        <p class="spotlight-phone"><strong>Phone:</strong> <a href="tel:${member.phone.replace(/[^0-9+]/g, '')}">${member.phone}</a></p>
-        <p class="spotlight-address"><strong>Address:</strong> ${member.address}</p>
-        <p class="spotlight-website">
-          <a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website &rarr;</a>
-        </p>
+        <div class="spotlight-detail-item">
+          <span class="detail-label">Address:</span>
+          <span class="detail-text">${member.address}</span>
+        </div>
+        <div class="spotlight-detail-item">
+          <span class="detail-label">Phone:</span>
+          <a href="tel:${member.phone.replace(/[^0-9+]/g, '')}" class="spotlight-link">${member.phone}</a>
+        </div>
+        <div class="spotlight-website">
+          <a href="${member.website}" target="_blank" rel="noopener noreferrer" class="btn-website">
+            Visit Company Website &rarr;
+          </a>
+        </div>
       </div>
     `;
 

@@ -59,11 +59,12 @@
 
     <!-- Scalable Hero Banner with CTA Link positioned over image -->
     <section class="hero-container" aria-label="Chamber Welcome and Call to Action">
-      <img src="images/hero-lagos.webp" alt="Lagos City Skyline and Lagoon Business Corridor" class="hero-img" width="1200" height="520">
+      <img src="images/hero-lagos.webp" alt="Lagos Lekki-Ikoyi Link Bridge at twilight" class="hero-img" width="1200" height="520">
       <div class="hero-cta">
-        <h2>Building the Future of Lagos Commerce</h2>
-        <p>Join hundreds of visionary businesses, technology innovators, and community leaders driving prosperity across West Africa.</p>
-        <a href="join.html" class="btn-cta">Join the Chamber</a>
+        <span class="cta-kicker">WELCOME TO WEST AFRICA'S COMMERCIAL HUB</span>
+        <h2>Connecting Lagos Business to Global Opportunities</h2>
+        <p>Join over 500+ verified corporate leaders, innovative tech founders, and regional entrepreneurs driving sustainable commerce across Nigeria.</p>
+        <a href="join.html" class="btn-cta">Join the Chamber &rarr;</a>
       </div>
     </section>
 
@@ -71,30 +72,47 @@
     <div class="home-columns">
       <!-- Current Events Section -->
       <section class="events-card" aria-labelledby="events-heading">
-        <h2 id="events-heading">Upcoming Chamber Events</h2>
+        <div class="section-header-row">
+          <div>
+            <span class="section-tag">COMMUNITY CALENDAR</span>
+            <h2 id="events-heading">Upcoming Chamber Events</h2>
+          </div>
+        </div>
+
         <div class="events-list">
           <article class="event-item">
-            <div class="event-badge">Nov 28</div>
+            <div class="calendar-badge" role="img" aria-label="November 28">
+              <span class="cal-month">NOV</span>
+              <span class="cal-day">28</span>
+            </div>
             <div class="event-details">
-              <h3>Annual Lagos Economic Forum 2026</h3>
+              <h3>Annual Lagos Economic Summit 2026</h3>
               <p class="event-meta">Eko Convention Centre &bull; 9:00 AM &ndash; 4:00 PM</p>
-              <p class="event-snippet">Explore regional cross-border commerce, infrastructure investments, and pan-African trade opportunities.</p>
+              <p class="event-snippet">Keynote discussions on regional supply chains, port logistics, digital commerce regulations, and sustainable city infrastructure.</p>
             </div>
           </article>
+
           <article class="event-item">
-            <div class="event-badge">Dec 05</div>
+            <div class="calendar-badge" role="img" aria-label="December 5">
+              <span class="cal-month">DEC</span>
+              <span class="cal-day">05</span>
+            </div>
             <div class="event-details">
-              <h3>Tech Founders &amp; Angel Mixer</h3>
+              <h3>Tech Founders &amp; Angel Investors Mixer</h3>
               <p class="event-meta">Victoria Island Co-Work Hub &bull; 5:30 PM &ndash; 8:00 PM</p>
-              <p class="event-snippet">Connect high-growth technology startups with angel networks, venture partners, and corporate sponsors.</p>
+              <p class="event-snippet">High-impact networking evening connecting emerging fintech and SaaS startups with accredited African venture partners.</p>
             </div>
           </article>
+
           <article class="event-item">
-            <div class="event-badge">Dec 12</div>
+            <div class="calendar-badge" role="img" aria-label="December 12">
+              <span class="cal-month">DEC</span>
+              <span class="cal-day">12</span>
+            </div>
             <div class="event-details">
-              <h3>SME Export Readiness Masterclass</h3>
+              <h3>SME Export Readiness &amp; Trade Masterclass</h3>
               <p class="event-meta">Chamber Auditorium, Ikeja &bull; 10:00 AM &ndash; 2:00 PM</p>
-              <p class="event-snippet">Hands-on session on digital cross-border payments, packaging standards, and export logistics.</p>
+              <p class="event-snippet">Practical workshop on international compliance standards, currency risk management, and cross-border digital payments.</p>
             </div>
           </article>
         </div>
@@ -102,7 +120,14 @@
 
       <!-- Weather Section using OpenWeatherMap API -->
       <section class="weather-card" aria-labelledby="weather-heading">
-        <h2 id="weather-heading">Local Weather</h2>
+        <div class="section-header-row">
+          <div>
+            <span class="section-tag">LOCAL METEOROLOGY</span>
+            <h2 id="weather-heading">Lagos Weather</h2>
+          </div>
+          <span class="weather-station-tag">Station: Lagos Island</span>
+        </div>
+
         <div class="weather-box">
           <div class="current-weather">
             <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="Current weather condition" width="64" height="64">
@@ -112,15 +137,21 @@
             </div>
           </div>
           <div class="weather-extra">
-            <p><strong>Humidity:</strong> <span id="humidity">--%</span></p>
-            <p><strong>Location:</strong> Lagos, Nigeria</p>
+            <div class="weather-stat">
+              <span class="stat-label">Humidity</span>
+              <span id="humidity" class="stat-value">--%</span>
+            </div>
+            <div class="weather-stat">
+              <span class="stat-label">Region</span>
+              <span class="stat-value">Lagos, Nigeria</span>
+            </div>
           </div>
         </div>
 
         <div class="forecast-section">
-          <h3>3-Day Forecast</h3>
+          <h3>3-Day Temperature Forecast</h3>
           <div id="forecast-container" class="forecast-grid">
-            <!-- Dynamically populated by home.js -->
+            <!-- Dynamically populated by home.js via OpenWeatherMap API -->
           </div>
         </div>
       </section>
@@ -128,7 +159,11 @@
 
     <!-- Member Spotlights Section (2-3 Gold or Silver Members randomly loaded) -->
     <section class="spotlights-section" aria-labelledby="spotlight-heading">
-      <h2 id="spotlight-heading">Member Spotlights</h2>
+      <div class="spotlights-header">
+        <span class="section-tag">PREMIER PARTNERS</span>
+        <h2 id="spotlight-heading">Featured Member Spotlights</h2>
+        <p class="spotlights-subtext">Discover vetted corporate innovators, financial pioneers, and commercial partners actively driving economic expansion in Lagos.</p>
+      </div>
       <div id="spotlight-container" class="spotlight-grid">
         <!-- Dynamically populated by home.js from data/members.json -->
       </div>
